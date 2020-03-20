@@ -174,22 +174,22 @@ body, html {
   padding: 10px;
 }
 .list-type ol {
-  margin: 0 40px;
+  margin: 10px 50px;
   position: relative;
   counter-reset: li;
   list-style: none;
   *list-style: decimal;
   font-size: 15px;
-  width: 40%;
+  width: 95%;
   font-family: "Raleway", sans-serif;
-  padding: 0;
+  padding: 6px;
 }
 .list-type li {
   font-weight: 700;
   position: relative;
   display: inline-block;
   padding: 4px;
-  min-width: 180px;
+  min-width: 140px;
   margin: 10px;
   background: rgba(15, 16, 32, 0.5);
   color: #444;
