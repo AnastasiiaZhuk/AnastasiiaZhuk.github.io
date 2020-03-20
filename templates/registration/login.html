@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/login.css">
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+                <h2 class="active"> Sign In </h2>
+                <h2 class="inactive underlineHover"> <a class="a1" href="registration_form.html">Sign Up </a></h2>
+                <div class="sign_in">
+                    <form id="login_form" method="post" action=".">
+                         <label></label> <input type="text"  class="fadeIn second" name="username"
+                                                                          required maxlength="150" id="login" placeholder="login">
+                        <label ></label> <input type="password" class="fadeIn third"
+                                                                          name="password" required id="login1" placeholder="password">
+                        <input type="submit" value="Log in" />
+                        <input type="hidden" name="next" value="{{ next }}" />
+                    </form>
+                    <p>
+                        Not a member?
+                        <a href="registration_form.html">Register</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

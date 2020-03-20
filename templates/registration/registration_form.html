@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/registerin.css">
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+                <h2 class="active"> Sign Up </h2>
+                <h2 class="inactive underlineHover"> <a class="a1" href="login.html">Sign in</a> </h2>
+                <form role="form" method="post" action="." enctype="multipart/form-data">
+                    <label for="id_username"></label> <input type="text"  class="fadeIn second" name="username" id="id_username"
+                                                                          required maxlength="150"  placeholder="login" autofocus>
+                    <label for="id_email"></label><input type="email" class="fadeIn fourth"
+                                                                            name="email" required id="id_email" placeholder="email">
+                    <label for="id_password1"></label> <input type="password" class="fadeIn third"
+                                                                          name="password1" required id="id_password1" placeholder="password1">
+                    <label for="id_password2"></label> <input type="password" class="fadeIn fifth"
+                                                                          name="password2" required id="id_password2" placeholder="password2">
+                    <input type="submit" name="Submit" value="Submit"/>
+                </form>
+                <p>
+                    You a member?
+                    <a href="login.html">Login</a>
+                </p>
+        </div>
+    </div>
+</body>
+</html>

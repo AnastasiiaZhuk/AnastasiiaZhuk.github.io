@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+text {
+  color: #0F1020;
+}
+
+html {
+  background-color: #e27d60;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+}
+
+.wrapper_div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+.wrapper_div #formContent {
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  min-height: 400px;
+  position: relative;
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 10px 8px 10px 8px;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  margin: 50px;
+  height: 50px;
+  color: #0F1020;
+}
+.buttons a {
+  text-decoration: none;
+  padding: 5px;
+  background-color: rgba(15, 16, 32, 0.7);
+}
+.buttons a:link {
+  text-decoration: none;
+  color: #e27d60;
+  font-size: 18px;
+}
+.buttons a:visited {
+  text-decoration: none;
+  color: #2ec4b6;
+}
+.buttons a:hover {
+  color: #e25f56;
+}
+.buttons a:active {
+  text-decoration: none;
+  color: #0F1020;
+}
+
+/*# sourceMappingURL=events.css.map */

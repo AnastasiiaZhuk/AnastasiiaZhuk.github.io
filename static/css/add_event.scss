@@ -1,0 +1,85 @@
+@import "design_variables";
+
+html{
+    background-color:  $main_color;
+}
+body {
+    font-family: $font;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+
+    #formContent {
+        border-radius: 10px 10px 10px 10px;
+        background: #fff;
+        padding: 30px;
+        width: 90%;
+        max-width: 500px;
+        position: relative;
+        text-align: center;
+    }
+
+}
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 10px 8px 10px 8px;
+    color: $text_color;
+
+}
+input{
+    background-color: $text_color;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    display: inline-block;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+input:hover  {
+    background-color: rgba(226, 125, 96, 0.6);
+}
+
+p:active  {
+    -o-transform: scale(0.95);
+    transform: scale(0.95);
+}
+p {
+    font: $font;
+    font-size: 16px;
+    font-weight: 600;
+
+    input {
+        background-color: $two_color;
+        color: #0d0d0d;
+        padding: 15px 32px;
+        display: inline-block;
+        margin: 7px;
+        width: 80%;
+        border: 2px solid #f6f6f6;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        text-align: left;
+        box-shadow: 0 10px 30px 0 rgba(15, 16, 32, 0.2);
+        border-radius: 5px 5px 5px 5px;
+    }
+}
+* {
+    box-sizing: border-box;
+}

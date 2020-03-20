@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    {% block body_block %}
+        <h1> Events by choosen date </h1>
+        {% for e in event %}
+            <p> {{ e.name }}
+                {{ e.date }}
+                 {{e.description}}</p>
+        {% endfor %}
+    {% endblock %}
+</body>
+</html>
+
+

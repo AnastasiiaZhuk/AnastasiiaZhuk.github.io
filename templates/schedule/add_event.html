@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Ecalendar</title>
+    <link rel="stylesheet" href="../../static/css/add_event.css">
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <h1>Add an Event</h1>
+            <form id="event_form" method="post" action=".">
+                    <p>
+                        <input type="text" id="title" class="fadeIn second" name="title" placeholder="title">
+                        <input type="text" id="description" class="fadeIn third" name="description" placeholder="description">
+                        <input type="date" id="date" class="fadeIn fourth" name="date" placeholder="date">
+                    </p>
+                <input type="submit" name="Submit" value="Create Event" />
+            </form>
+        </div>
+    </div>
+</body>
+</html>

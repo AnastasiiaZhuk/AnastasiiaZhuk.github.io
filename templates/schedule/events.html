@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+</head>
+<body>
+    <ul class="nav nav-pills flex-column">
+    {% if events %}
+        {% for c in events %}
+            {% if c == act_event %}
+                <li class="nav-item"><strong><a href="{% url 'show_event' c.slug %}">{{ c.name }}</a></strong></li>
+            {% else  %}
+                 <li class="nav-item"><a href="{% url 'show_event' c.slug %}">{{ c.name }}</a></li>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@import "design_variables";
+
+*{box-sizing: border-box;}
+body{
+    background-image: $image;
+    margin: 10px;
+    height: 1000px;
+    background-color: $bgcolor;
+    font-family: $font;
+}
+.page-header{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $main_color;
+    text-shadow: 2px 2px 4px $text_color;
+}

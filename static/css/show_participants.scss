@@ -1,0 +1,86 @@
+@import "design_variables";
+
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    height: 1000px;
+    width: 100%;
+    background-color: $bgcolor;
+    font-family: $font;
+    background-image: $image;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+text {
+    color: $two_color;
+    font-size: 30px;
+}
+
+.list-type {
+    width: 550px;
+    position: absolute;
+    left: 0;
+    margin-left: 35px;
+}
+.list-type ol, .list-type2 ol {
+    position: relative;
+    left: 0;
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    font-size: 15px;
+
+    font-family: $font;
+    padding: 0;
+    margin-bottom: 4em;
+}
+.list-type2 li, .list-type li{
+    font-weight: 700;
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: rgba(226, 125, 96, 0.8);
+    color: $two_color;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+
+}
+
+.list-type  li:hover, .list-type2 li:hover{
+    background: $text_color;
+    text-decoration:none;
+    transform: scale(1.05);
+}
+
+.list-type li:before, .list-type2 li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background:$main_color;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    color:#FFF;
+}
+.list-type2 {
+    width: 550px;
+    position: absolute;
+    right: 0;
+    margin-right: 35px;
+}
+h1{
+    font: $font;
+    font-weight: 700;
+    color: $text_color;
+
+}
