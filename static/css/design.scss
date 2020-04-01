@@ -275,16 +275,7 @@ body, html {
 
 
 @media screen and (max-width:720px) {
-    //.weekdays li, .days li {
-    //    width: 13.1%;
-    //    height: 14%;
-    //    font-size: 12px;
-    //}
-    //.days li .active {padding: 2px;}
-    //.snip1217 {
-    //    width: 13%;
-    //    height: 14%;
-    //}
+
     .body{
         width: 100%;
         height: 100%;
@@ -304,10 +295,10 @@ body, html {
 }
 
 @media screen and (max-width: 420px) {
-    .weekdays li, .days li {width: 12.5%;}
+    .weekdays li, .days li {width: 12.5%; margin: 1px}
     .weekdays, .days{
         width: 350px;
-        margin-left: 8px;
+        margin: 0 8px;
         position: center;
     }
     .days li .active {padding: 2px;}
@@ -330,11 +321,13 @@ body, html {
         font-size: 8px;
         top: 0;
         margin: 0;
+        padding: 0;
     }
     body, html{
         width: 414px;
         height: 100%;
         margin: 0;
+        padding: 0;
     }
     .parallax{
         background-image: $image;
