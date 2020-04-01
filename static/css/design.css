@@ -277,8 +277,19 @@ body, html {
 
   .weekdays, .days {
     width: 350px;
-    margin: 0 8px;
+    margin: 0;
     position: center;
+  }
+
+  .list-type {
+    margin: 0;
+    width: 414px;
+    padding: 0;
+  }
+  .list-type ol {
+    margin: 0;
+    width: 414px;
+    padding: 0;
   }
 
   .days li .active {
@@ -294,7 +305,8 @@ body, html {
     background: #e27d60;
     text-align: center;
     width: 350px;
-    margin-left: 8px;
+    margin: 0;
+    padding: 0;
     height: 50px;
   }
 

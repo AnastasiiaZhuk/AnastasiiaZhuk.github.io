@@ -298,8 +298,18 @@ body, html {
     .weekdays li, .days li {width: 12.5%; margin: 1px}
     .weekdays, .days{
         width: 350px;
-        margin: 0 8px;
+        margin: 0;
         position: center;
+    }
+    .list-type{
+        margin: 0;
+        width: 414px;
+        padding: 0;
+        ol {
+            margin: 0;
+            width: 414px;
+            padding: 0;
+        }
     }
     .days li .active {padding: 2px;}
     .calendar{
@@ -311,7 +321,8 @@ body, html {
             background: $main_color;
             text-align: center;
             width: 350px;
-            margin-left: 8px;
+            margin: 0;
+            padding: 0;
             height: 50px;
         }
     }
