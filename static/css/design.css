@@ -269,7 +269,7 @@ body, html {
     background-size: cover;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 414px) {
   .weekdays li, .days li {
     width: 12.5%;
     margin: 1px;
