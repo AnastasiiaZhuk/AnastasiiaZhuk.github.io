@@ -76,13 +76,38 @@ p input {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   text-align: left;
-  text-transform: uppercase;
   box-shadow: 0 10px 30px 0 rgba(15, 16, 32, 0.2);
   border-radius: 5px 5px 5px 5px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 414px) {
+  body, html {
+    width: 414px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  p input {
+    padding: 7px 16px;
+    margin: 4px;
+    width: 80%;
+  }
+
+  input {
+    padding: 8px 20px;
+    margin: 6px;
+    width: 80%;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=add_event.css.map */

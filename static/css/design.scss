@@ -305,10 +305,25 @@ body, html {
         margin: 0;
         width: 414px;
         padding: 0;
+
         ol {
             margin: 0;
             width: 414px;
-            padding: 0;
+            padding: 5px;
+            position: relative;
+            counter-reset: li;
+            list-style: none;
+            *list-style: decimal;
+            font-size: 6px;
+        }
+        li {
+            font-weight: 300;
+            position: relative;
+            display: inline-block;
+            padding: 2px;
+            min-width: 140px;
+            margin: 4px;
+            transition: all .2s ease-in-out;
         }
     }
     .days li .active {padding: 2px;}
@@ -327,12 +342,31 @@ body, html {
         }
     }
     .snip1217 {
+
+        display: inline;
         width: 414px;
         text-align: center;
-        font-size: 8px;
+
         top: 0;
         margin: 0;
         padding: 0;
+        position: fixed;
+
+        li
+        {
+            font-size: 6px;
+            display: inline-block;
+            list-style: outside none none;
+            margin: 1px 10px;
+            padding: 0;
+        }
+
+        a {
+            padding: 0.4em 0;
+            position: relative;
+            display: inline-block;
+        }
+
     }
     body, html{
         width: 414px;
